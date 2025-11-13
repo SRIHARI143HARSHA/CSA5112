@@ -1,0 +1,20 @@
+# Playfair Cipher Key Calculation
+
+import math
+
+def playfair_keys():
+    # Total letters in the English alphabet (ignoring 'J')
+    total_letters = 25
+    
+    # Calculate the number of possible keys
+    possible_keys = math.pow(total_letters, 2)
+    
+    # Calculate effectively unique keys (considering identical encryption results)
+    # This is a simplified approximation
+    unique_keys = possible_keys / 2  # Assuming half produce identical results
+    
+    return possible_keys, unique_keys
+
+possible_keys, unique_keys = playfair_keys()
+print(f"Possible keys (approx): {possible_keys:.0f} (2^{math.log2(possible_keys):.0f})")
+print(f"Effectively unique keys (approx): {unique_keys:.0f} (2^{math.log2(unique_keys):.0f})")
