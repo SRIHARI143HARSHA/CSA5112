@@ -36,3 +36,20 @@ def frequency_attack_mono():
 
 if __name__ == "__main__":
     frequency_attack_mono()
+
+
+
+output:
+=== Frequency Attack on Monoalphabetic Cipher ===
+Enter ciphertext: hello
+
+Frequency analysis mapping:
+L → E
+H → T
+E → A
+O → O
+
+Decrypted text:
+TAEEO
+
+=== Code Execution Successful ===
