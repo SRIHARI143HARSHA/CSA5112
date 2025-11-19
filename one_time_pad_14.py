@@ -27,3 +27,16 @@ def one_time_pad():
 
 if __name__ == "__main__":
     one_time_pad()
+
+
+
+output:
+=== One-Time Pad ===
+Plaintext: sendmoremoney
+Key stream: [9, 0, 1, 7, 23, 15, 21, 14, 11, 11, 2, 8, 9]
+Ciphertext: beokjdmsxzpmh
+
+To decrypt to 'cashnotneeded':
+New key stream: [25, 4, 22, 3, 22, 15, 19, 5, 19, 21, 12, 8, 4]
+
+=== Code Execution Successful ===
