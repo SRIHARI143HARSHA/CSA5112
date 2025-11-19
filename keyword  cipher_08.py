@@ -12,3 +12,10 @@ def print_cipher_mapping():
     print("Cipher: ", ' '.join(cipher.upper()))
 
 print_cipher_mapping()
+
+
+output:
+Plain:   a b c d e f g h i j k l m n o p q r s t u v w x y z
+Cipher:  C I P H E R A B D F G J K L M N O Q S T U V W X Y Z
+
+=== Code Execution Successful ===
