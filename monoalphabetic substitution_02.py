@@ -33,3 +33,13 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+OUTPUT:
+=== Monoalphabetic Cipher ===
+'e' for encrypt, 'd' for decrypt: e
+Enter text: srihari
+Enter 26-letter key: JKLMNOPABCDEFGHQRSTUVWXYZ
+Encrypted: TSBAJSB
+
+=== Code Execution Successful ===
