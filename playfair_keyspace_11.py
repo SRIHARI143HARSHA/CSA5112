@@ -18,3 +18,11 @@ def playfair_keys():
 possible_keys, unique_keys = playfair_keys()
 print(f"Possible keys (approx): {possible_keys:.0f} (2^{math.log2(possible_keys):.0f})")
 print(f"Effectively unique keys (approx): {unique_keys:.0f} (2^{math.log2(unique_keys):.0f})")
+
+
+
+output:
+Possible keys (approx): 625 (2^9)
+Effectively unique keys (approx): 312 (2^8)
+
+=== Code Execution Successful ===
