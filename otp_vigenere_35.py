@@ -35,3 +35,20 @@ def otp_vigenere():
 
 if __name__ == "__main__":
     otp_vigenere()
+
+
+
+
+output:
+=== One-Time Pad (Vigenere Variant) ===
+Enter plaintext: hello
+Enter key stream (space-separated numbers 0-25): 4 19 2 0 14
+
+Plaintext:  hello
+Key stream: [4, 19, 2, 0, 14]
+Ciphertext: lxnlc
+
+Decryption:
+Decrypted:  hello
+
+=== Code Execution Successful ===
