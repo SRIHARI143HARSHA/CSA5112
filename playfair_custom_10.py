@@ -32,3 +32,11 @@ def playfair_encrypt_custom():
 
 if __name__ == "__main__":
     playfair_encrypt_custom()
+
+
+
+output:
+Plaintext: MUSTSSEEYOUOVERCADOGANWESTCOMINGATONCE
+Encrypted: UZTBTTLLWQNPZLGBETQALOZATBTQFKQLTHPODG
+
+=== Code Execution Successful ===
