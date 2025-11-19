@@ -30,3 +30,10 @@ def affine_decrypt(ciphertext, a, b):
  # Example ciphertext
 decrypted_message = affine_decrypt(ciphertext, 1, 1)
 print(decrypted_message)
+
+
+OUTPUT:
+enter any text :SRIHARI
+RQHGZQH
+
+=== Code Execution Successful ===
