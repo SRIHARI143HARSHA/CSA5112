@@ -63,3 +63,10 @@ class PlayfairCipher:
 cipher = PlayfairCipher("KEYWORD")
 encrypted_text = cipher.encrypt("HELLO WORLD")
 print("Encrypted:", encrypted_text)
+
+
+
+output:
+Encrypted: GYIZSCOKCFBU
+
+=== Code Execution Successful ===
