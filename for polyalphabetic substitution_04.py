@@ -17,3 +17,11 @@ def polyalphabetic_cipher(plaintext, key):
     return ''.join(ciphertext)
 ciphertext = polyalphabetic_cipher(plaintext, key)
 print(ciphertext)
+
+
+output:
+enter plaintext :srihari
+enter key :hja
+ZAIOJRP
+
+=== Code Execution Successful ===
