@@ -1,28 +1,13 @@
-# Program 26: RSA Key Reuse Security
-def rsa_key_reuse():
-    print("=== RSA Key Reuse Analysis ===")
-    
-    print("\nScenario:")
-    print("- Bob's private key d is leaked")
-    print("- Bob wants to generate new key pair")
-    print("- Question: Can he reuse modulus n?")
-    
-    print("\nAnswer: NO - This is UNSAFE!")
-    
-    print("\nReasons:")
-    print("1. If attacker has old private key d:")
-    print("   - They know φ(n) from e and d")
-    print("   - They can factor n using φ(n)")
-    print("   - Any new key pair with same n is compromised")
-    
-    print("\n2. Even without old key:")
-    print("   - Reusing n is bad practice")
-    print("   - Multiple keys with same modulus can be attacked")
-    
-    print("\nCorrect approach:")
-    print("- Generate completely new n (new p and q)")
-    print("- Generate new e and d")
-    print("- Discard all old key material")
+p,q,e = 61,53,17
+n = p*q
+phi = (p-1)*(q-1)
+d = pow(e, -1, phi)
 
-if __name__ == "__main__":
-    rsa_key_reuse()
+msg = "hi"
+cipher = [pow(ord(c), e, n) for c in msg]
+plain  = "".join(chr(pow(c, d, n)) for c in cipher)
+
+print("Public key:", (n, e))
+print("Private key:", (n, d))
+print("Cipher:", cipher)
+print("Decrypted:", plain)
