@@ -30,3 +30,20 @@ def rsa_private_key():
 
 if __name__ == "__main__":
     rsa_private_key()
+
+
+
+
+output:
+=== RSA Private Key Calculation ===
+Public key: e = 31, n = 3599
+
+Factoring n...
+Found: p = 59, q = 61
+φ(n) = (p-1)(q-1) = 3480
+
+Private key: d = 3031
+
+Verification: (e × d) mod φ(n) = 1
+
+=== Code Execution Successful ===
