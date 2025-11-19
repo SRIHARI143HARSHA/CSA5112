@@ -33,3 +33,27 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+output:
+=== Substitution Cipher Decryption ===
+Enter ciphertext: srihari
+
+Frequency Analysis:
+R: 2
+I: 2
+S: 1
+H: 1
+A: 1
+
+Hints:
+- Most common English letter: E
+- Common word: THE
+- Look for repeated patterns
+
+Cipher char (or 'done'): done
+
+Decrypted: SRIHARI
+
+=== Code Execution Successful ===
