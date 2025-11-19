@@ -36,3 +36,15 @@ if __name__ == "__main__":
     print("\nTop Possible Plaintexts:")
     for i, plaintext in enumerate(results, 1):
         print(f"{i}: {plaintext}")
+
+
+OUTPUT:
+Enter the ciphertext: SRIHARI
+How many possible plaintexts do you want? 5
+
+Top Possible Plaintexts:
+1: onedwne
+2: srihari
+3: dctslct
+4: edutmdu
+5: fevunev
