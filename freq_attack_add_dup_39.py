@@ -23,3 +23,26 @@ def frequency_attack_additive():
 
 if __name__ == "__main__":
     frequency_attack_additive()
+
+
+
+output:
+=== Frequency Attack on Additive Cipher ===
+Enter ciphertext: srihai
+Top N results (default 10): 4
+
+Top 4 possibilities:
+
+1. Shift 0:
+SRIHAI
+
+2. Shift 1:
+RQHGZH
+
+3. Shift 2:
+QPGFYG
+
+4. Shift 3:
+POFEXF
+
+=== Code Execution Successful ===
