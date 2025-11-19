@@ -32,3 +32,14 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+output:
+=== Affine Caesar Cipher ===
+Valid 'a' values: 1,3,5,7,9,11,15,17,19,21,23,25
+Enter plaintext: HARI
+Enter a: 3
+Enter b: 8
+Encrypted: DIHG
+
+=== Code Execution Successful ===
