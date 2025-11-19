@@ -29,3 +29,20 @@ def frequency_attack_mono():
 
 if __name__ == "__main__":
     frequency_attack_mono()
+
+
+output:
+=== Frequency Attack on Monoalphabetic Cipher ===
+Enter ciphertext: srihari
+
+Top 10 frequency mappings:
+R → E
+I → T
+S → A
+H → O
+A → I
+
+Decrypted text (top 1 result):
+AETOIET
+
+=== Code Execution Successful ===
