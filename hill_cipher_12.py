@@ -42,3 +42,15 @@ def hill_encrypt():
 
 if __name__ == "__main__":
     hill_encrypt()
+
+
+output:
+Key matrix:
+[[9 4]
+ [5 7]]
+
+Plaintext: MEETMEATTHEUSUALPLACEATTENRATHERTHANEIGHTOCLOCK
+Ciphertext: UKIXUKYDROMEIWSZXWIOKUNUKHXHROAJROANQYEBTLKJEGAD
+Decrypted: KAOGKAKEJMUYISOQDEMKECDUECRCJMCWJMAAAQWMZIQEAESQ
+
+=== Code Execution Successful ===
