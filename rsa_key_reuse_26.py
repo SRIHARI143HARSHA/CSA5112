@@ -11,3 +11,12 @@ print("Public key:", (n, e))
 print("Private key:", (n, d))
 print("Cipher:", cipher)
 print("Decrypted:", plain)
+
+
+
+
+output:
+Public key: (3233, 17)
+Private key: (3233, 2753)
+Cipher: [2170, 3179]
+Decrypted: hi
