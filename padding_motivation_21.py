@@ -1,26 +1,37 @@
-# Program 21: Padding Motivation in Block Ciphers
-def padding_motivation():
-    print("=== Motivation for Padding ===")
-    
-    print("\nWhy always pad, even when block is complete?")
-    print("\n1. Unambiguous Message Delimitation:")
-    print("   - Receiver can always identify padding")
-    print("   - No confusion about message end")
-    
-    print("\n2. Security:")
-    print("   - Prevents padding oracle attacks")
-    print("   - Consistent handling of all messages")
-    
-    print("\n3. Integrity:")
-    print("   - Can detect truncation attacks")
-    print("   - Ensures complete message received")
-    
-    print("\n4. Implementation:")
-    print("   - Simpler code (always remove padding)")
-    print("   - No special cases to handle")
-    
-    print("\nPadding scheme: 1 bit followed by zero bits")
-    print("Example: ...0001 or ...0100 or ...1000 or ...10000000")
+# filename: 21_padding_motivation.py
+"""
+Pad/unpad using '1 followed by zeros' and explain why always include padding block.
+"""
+def pad_1zeros(data, block_size):
+    pad_len = (block_size - (len(data) % block_size)) or block_size
+    return data + b'\x80' + b'\x00'*(pad_len-1)
 
-if __name__ == "__main__":
-    padding_motivation()
+def unpad_1zeros(padded):
+    i = len(padded)-1
+    while i>=0 and padded[i]==0:
+        i-=1
+    if i>=0 and padded[i]==0x80:
+        return padded[:i]
+    raise ValueError("Invalid padding")
+
+if __name__=='__main__':
+    msg = b'HELLO'
+    bsize = 8
+    p = pad_1zeros(msg, bsize)
+    print("Padded:", p.hex())
+    print("Unpadded:", unpad_1zeros(p))
+    print("\nWhy always pad even if message is exact multiple of block size?")
+    print("- Prevents ambiguity when plaintext ends with bytes that could look like padding.")
+    print("- Simplifies unpadding (always remove at least one block).")
+
+
+
+output:
+Padded: 48454c4c4f800000
+Unpadded: b'HELLO'
+
+Why always pad even if message is exact multiple of block size?
+- Prevents ambiguity when plaintext ends with bytes that could look like padding.
+- Simplifies unpadding (always remove at least one block).
+
+=== Code Execution Successful ===
