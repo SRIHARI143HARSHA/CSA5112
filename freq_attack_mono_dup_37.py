@@ -22,3 +22,12 @@ def frequency_attack_mono():
 
 if __name__ == "__main__":
     frequency_attack_mono()
+
+
+output:
+=== Frequency Attack on Monoalphabetic Cipher ===
+Enter ciphertext: srihari
+
+Decrypted: AETOIET
+
+=== Code Execution Successful ===
